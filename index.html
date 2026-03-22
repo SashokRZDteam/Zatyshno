@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Zatyshno — магазин корисних речей для дому, краси та техніки. 124 товари. Доставка по всій Україні.">
+<title>Zatyshno — Магазин корисних речей</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nav-logo" href="#" onclick="navigate('home');return false">Zatys<em>hno</em></a>
+  <a class="nav-tg" href="https://t.me/zatyshno_ua_bot" target="_blank">✈️ Telegram-бот</a>
+</nav>
+
+<!-- APP ROOT -->
+<div id="app"></div>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="f-logo">Zatys<em>hno</em></div>
+    <p class="f-desc">Магазин корисних речей для дому, краси та техніки. Швидка доставка по всій Україні.</p>
+  </div>
+  <div>
+    <div class="f-col-title">Магазин</div>
+    <ul class="f-links">
+      <li><a href="#" onclick="navigate('home');return false">Каталог товарів</a></li>
+      <li><a href="https://t.me/zatyshno_ua_bot" target="_blank">Telegram-бот</a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="f-col-title">Інформація</div>
+    <ul class="f-links">
+      <li><a href="#">Оплата та доставка</a></li>
+      <li><a href="#">Умови повернення</a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="f-col-title">Контакти</div>
+    <ul class="f-links">
+      <li><a href="https://t.me/zatyshno_ua_bot" target="_blank">Написати в Telegram</a></li>
+    </ul>
+  </div>
+  <div class="f-bottom">
+    <div class="f-copy">© 2024 Zatyshno. Всі права захищені.</div>
+    <div class="f-copy">Зроблено з ❤️ в Україні</div>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div id="toast"></div>
+
+<!-- NAV scroll effect -->
+<script>
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+  });
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
